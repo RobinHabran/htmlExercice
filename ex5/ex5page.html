@@ -4,9 +4,21 @@
     <meta charset="utf-8" />
     <title>Exercice 5</title>
   </head>
+  <style type="text/css">
+    table{
+      border-collapse: collapse;
+    }
+    td{
+      border: thin solid black;
+      padding: 2px;
+    }
+    tfoot{
+      text-align: center;
+    }
+  </style>
   <body>
-    <table border="1">
-      <caption>Titre</caption>
+    <table border=2>
+      <caption>Mon compte BNP</caption>
       <thead> <!-- En-tête du tableau -->
         <tr>
           <td><strong>Date</strong></td>
@@ -16,7 +28,8 @@
         </tr>
       <tfoot> <!-- Pied du tableau -->
         <tr>
-          <td></td>
+          <td colspan="2">Solde</td>
+          <td colspan="2">575,40</td> <!-- colspan= casser une colonne -->
         </tr>
       </tfoot>
       <tbody>

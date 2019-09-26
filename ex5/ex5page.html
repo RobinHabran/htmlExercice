@@ -8,7 +8,7 @@
     table{
       border-collapse: collapse;
     }
-    td{
+    td, th{
       border: thin solid black;
       padding: 2px;
     }
@@ -21,20 +21,20 @@
       <caption>Mon compte BNP</caption>
       <thead> <!-- En-tête du tableau -->
         <tr>
-          <td><strong>Date</strong></td>
-          <td><strong>Libellé</strong></td>
-          <td><strong>Crédit</strong></td>
-          <td><strong>Débit</strong></td>
+          <th><strong>Date</strong></th> <!-- th pour les cellules en-tête -->
+          <th><strong>Libellé</strong></th>
+          <th><strong>Crédit</strong></th>
+          <th><strong>Débit</strong></th>
         </tr>
       <tfoot> <!-- Pied du tableau -->
         <tr>
-          <td colspan="2">Solde</td>
+          <td colspan="2">Solde</td> <!-- colspan pour les fusions de ligne, et rowspan pour les collonnes-->
           <td colspan="2">575,40</td> <!-- colspan= casser une colonne -->
         </tr>
       </tfoot>
       <tbody>
         <tr>
-          <td><time>01/05/2016</time></td>
+          <td><time>01/05/2016</time></td> <!-- td pour les lignes -->
           <td>Paye</td>
           <td>1500</td>
           <td>0</td>
